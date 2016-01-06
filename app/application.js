@@ -1,7 +1,15 @@
-
-
-
-
 /**
  * Created by dvircohen on 1/6/16.
  */
+var app = angular.module('angularExperimentsApp', ['ui.router']);
+
+app.config(function($stateProvider, $urlRouterProvider) {
+
+    $stateProvider.state('promise', {
+        url: '/promise',
+        templateUrl: 'promise/_promise.html',
+        controller: 'promiseCtrl'
+    });
+
+    $urlRouterProvider.otherwise('/');
+});

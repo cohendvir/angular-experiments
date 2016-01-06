@@ -1,10 +1,29 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-ng-app="angularExperimentsApp">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
-</head>
+    <title>Angular Experiments</title>
+    <style type="text/css">
+        a {
+            text-decoration: none;
+            color: black;
+        }
+    </style>
+
 <body>
 
+{{1+1}}
+<ul>
+    <li><a ui-sref="promise">Promises</a></li>
+</ul>
+
+<ui-view></ui-view>
+
+<script type="text/javascript" src="../bower_components/angular/angular.min.js"></script>
+<script type="text/javascript" src="../bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
+
+<script type="text/javascript" src="application.js"></script>
+<script type="text/javascript" src="promise/promise_controller.js"></script>
+<script type="text/javascript" src="promise/promise_service.js"></script>
 </body>
 </html>
