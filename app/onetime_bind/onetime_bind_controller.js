@@ -3,8 +3,11 @@
  */
 
 app.controller('oneTimeBindCtrl', function($scope, $timeout) {
-    $scope.onetime = "This will be bind once";
-    $scope.twoway = "Two way binding";
+
+    $timeout(function() {
+        $scope.onetime = "This will be bind once";
+        $scope.twoway = "Two way binding";
+    }, 1000);
 
     $timeout(function(){
         $scope.onetime = "try try try";
