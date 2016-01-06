@@ -15,6 +15,10 @@ app.config(function($stateProvider, $urlRouterProvider) {
             url: '/onetimeBind',
             templateUrl: 'onetime_bind/_onetime_bind.html',
             controller: 'oneTimeBindCtrl'
+        })
+        .state('directivePriority', {
+            url: '/directivePriority',
+            templateUrl: 'directive_priority/_directive_priority.html'
         });
 
     $urlRouterProvider.otherwise('/');
